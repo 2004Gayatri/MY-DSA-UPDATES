@@ -25,6 +25,5 @@ public class BinarySearch{
         }else{
             System.out.print("Key is found !! ");
         }
-
     }
 }
