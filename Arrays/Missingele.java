@@ -13,4 +13,5 @@ public class Missingele{
         int[] arr = {1,2,3,4};
         System.out.print("Current Missing element  is : " + Missing_ele(arr));
     }
+   
 }
