@@ -23,6 +23,7 @@ Explanation: Only the subarray [4, 9, 5] satisfies 4 + 5 = 9
         }
         return count;
     }
+    //Print Fibonacci_series 
    public static void print_fibbonacci(){
     int[] Fibo_arr = new int[10];
     Fibo_arr[0]=0;
@@ -34,10 +35,26 @@ Explanation: Only the subarray [4, 9, 5] satisfies 4 + 5 = 9
         System.out.print(Fibo_arr[i] + " ");
     }
    }
+   public static void reverse_arr ( int[]arr){
+    int start =0;
+    int end = arr.length-1;
+    while(start<end){
+        int temp = arr[start];
+        arr[start]=arr[end];
+        arr[end]=temp;
+        start++;
+        end--;
+    }
+    for(int i=0;i<arr.length;i++){
+        System.out.print(arr[i] + " ");
+    }
+   }
+  
     public static void main(String[]args){
          int [] arr = {4, 9, 5, 6, 11,2,3,1};
-        // System.out.print("Count of subarrays with applied condition is : " +  Count_of_sub(arr));
-        print_fibbonacci();
-
+         System.out.print("Count of subarrays with applied condition is : " +  Count_of_sub(arr));
+         print_fibbonacci();
+         int a=54;
+         FindFactor(54);
     }
 }
