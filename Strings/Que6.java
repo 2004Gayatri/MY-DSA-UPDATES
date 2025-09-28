@@ -1,17 +1,17 @@
 import java.util.*;
 public class Que6{
     public static void main(String[]args){
-        String str = "She is good grid god and ground player potter.";
-        StringBuilder sb = new StringBuilder("");
-        String[] words = str.split(" ");
-        for(int i=0;i<words.length;i++){
-            char ch = words[i];
-            for(int j=0;j<words[i].length;j++){
-                if()
-            }
-
-
-        }
+       Scanner sc = new Scanner (System.in);
+       int [] arr1 = {1,2,5,3};
+       Arrays.sort(arr1);
+       int n = arr1.length+1;
+       int sum =0;
+       for(int i=0;i<arr1.length;i++){
+          sum+=arr1[i];
+       }
+       int total_sum = (n*(n+1))/2;
+       int ele = total_sum - sum;
+       System.out.print(ele);
 
     }
 }
