@@ -7,7 +7,7 @@ public class BasicQuestions{
         //Find the sum of all elements in the array 
         int total_sum =0;
         for(int i=0;i<=arr1.length;i++){
-            total_sum+=i;
+            total_sum + = i ; 
         }
         System.out.print("Total sum is : " + total_sum);
         
@@ -44,7 +44,6 @@ public class BasicQuestions{
             if(arr1[i]>largest){
                 Second_largest=largest;
                 largest=arr1[i];
-                
             }else if(arr1[i]<largest || arr1[i]>Second_largest){
                 Second_largest=arr1[i];
             }
@@ -67,7 +66,7 @@ public class BasicQuestions{
         for(int j=i+1;j<arr.length;j++){
             if(arr[j]==curr){
                 count++;
-                visted[j]=true;
+                visted [j]  = true ; 
             }
         }
       
