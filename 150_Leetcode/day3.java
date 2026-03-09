@@ -15,7 +15,7 @@ class Solution {
             // This ensures that there are no more than 2 occurrences of each number
             if (nums[i] != nums[insertPos - 2]) {
                 nums[insertPos] = nums[i];  // Insert the number at the appropriate position
-                insertPos++;  // Move the insert position forward
+                insertPos++;  
             }
         }
         
