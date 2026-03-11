@@ -87,17 +87,42 @@
 //     }
 // }
 // Find Missing Number
-import java.util.*;
-public class Day4{
-    public static void main(String[]args){
-        int [] nums = {1,2,3,5};
-        int sum =0;
-        int n = nums.length + 1;
-        for(int i=0;i<nums.length;i++){
-            sum+=nums[i];
-        }
-        int expected_sum = (n*(n+1))/2;
-        int missing_num = expected_sum - sum;
-        System.out.print("Number is : " + missing_num);
-    }
-}
+// import java.util.*;
+// public class Day4{
+//     public static void main(String[]args){
+//         int [] nums = {1,2,3,5};
+//         int sum =0;
+//         int n = nums.length + 1;
+//         for(int i=0;i<nums.length;i++){
+//             sum+=nums[i];
+//         }
+//         int expected_sum = (n*(n+1))/2;
+//         int missing_num = expected_sum - sum;
+//         System.out.print("Number is : " + missing_num);
+//     }
+// }
+// Remove Element
+// import java.util.*;
+// public class Day4{
+//     public static boolean isPalindrome(String s){
+//         int last_one = s.length()-1;
+//         int start_one = 0;
+//         while(last_one>start_one){
+//             if(s.charAt(last_one)!=s.charAt(start_one)){
+//                 return false;
+//             }
+//             start_one++;
+//             last_one--;
+//         }
+//         return true;
+//     }
+//     public static void main(String[]args){
+//         String s = "mada";
+        
+//         System.out.print(isPalindrome(s));
+        
+
+       
+//     }
+// }
+
