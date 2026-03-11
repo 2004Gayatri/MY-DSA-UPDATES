@@ -1,20 +1,22 @@
 import java.util.*;
 public class moveszore{
     public static void main(String[]args){
-        String s1 = "good";
-        String s2 = "bad";
+       String s = "aaabbbbccddd";
        StringBuilder sb = new StringBuilder();
-       int max_length = Math.max(s1.length(),s2.length());
-       for(int i=0;i<max_length;i++){
-        if(i<s1.length()){
-            sb.append(s1.charAt(i));
-        }
-        if(i<s2.length()){
-            sb.append(s2.charAt(i));
+       int count = 1;
+       for(int i=1;i<s.length();i++){
+        if(s.charAt(i)==s.charAt(i-1)){
+            count++;
+        }else{
+            sb.append(s.charAt(i));
+            sb.append(count);
+            count=1;
         }
        }
-        String ans = sb.toString();
-        System.out.print(ans);
-
+       sb.append(s.charAt(s.length()-1));
+       sb.append(count);
+       
+       String s1 = sb.toString();
+       System.out.print(s1);
     }
 }
