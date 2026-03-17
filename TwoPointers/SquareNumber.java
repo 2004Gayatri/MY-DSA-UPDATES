@@ -16,14 +16,25 @@ public class SquareNumber{
         // for(int i=0;i<nums.length;i++){
         //     System.out.print(nums[i]+ " ");
         // }
-
-        int current =0;
-        for(int i=0;i<nums.length;i++){
-            nums[current]=nums[i]*nums[i];
+       // Optimal Solution that give TC = O(n) and SC = O(n)
+        int left =0;
+        int right = nums.length-1;
+        int index = nums.length-1;
+        int result [] = new int[nums.length];
+        while(left<=right){
+            if((nums[left]*nums[left])<nums[right]*nums[right]){
+                result[index]=nums[right]*nums[right];
+                index--;
+                right--;
+            }else{ 
+                 result[index]=nums[left]*nums[left];
+                 index--;
+                 left++;
+            }
         }
         
         for(int i=0;i<nums.length;i++){
-            System.out.print(nums[i]+ " ");
+            System.out.print(result[i]+ " ");
         }
     }
 }
