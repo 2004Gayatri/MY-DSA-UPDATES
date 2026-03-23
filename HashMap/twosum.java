@@ -8,7 +8,6 @@ class Solution {
             return new int[]{i,map.get(complement)};
           }
           map.put(nums[i],i);
-         
       }
        return new int []{};
     }

@@ -1,16 +1,20 @@
 import java.util.*;
 public class pr{
-    public static int MaxElement(int [] nums ){
-      int max_ele = Integer.MIN_VALUE;
+    public static void main(String[]args){
+      int [] nums = {3,2,4};
+      int target = 6;
+      HashMap <Integer,Integer> map = new HashMap<>();
+      HashSet <Integer> set = new HashSet<>();
       for(int i=0;i<nums.length;i++){
-        if(nums[i]>max_ele){
-            max_ele = nums[i];
-        }
+        map.put(nums[i],map.getOrDefault(nums[i],0)+1);
       }
-      return max_ele;
-    }
-  public static void main (String[]args){
-    int nums[] = {5,9,0,5,3,0,7,0,2,21,1};
-    System.out.print("Maximun element is : " + MaxElement(nums));
+      for(int i=0;i<nums.length;i++){
+        int complement = target-nums[i];
+        if(map.containsKey(complement)){
+                set.add(i);
+        }
+        map.put(nums[i],i);
+      }
+      System.out.print(set);
   }
 }
